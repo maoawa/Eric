@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.93);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+.avatar:hover {
+    transform: rotate(360deg);
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+a {
+    color: rgb(227, 117, 136);
+}
