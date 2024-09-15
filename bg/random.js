@@ -2,7 +2,7 @@
 const landscapeBackgrounds = ['bg/bg_l_1.jpg', 'bg/bg_l_2.jpg'];
 const portraitBackgrounds = ['bg/bg_p_1.jpg', 'bg/bg_p_2.jpg', 'bg/bg_p_3.jpg'];
 
-// 获取当前屏幕的宽高比
+// 获取当前屏幕的宽高比并设置背景
 function setRandomBackground() {
     const width = window.innerWidth;
     const height = window.innerHeight;
@@ -22,8 +22,5 @@ function setRandomBackground() {
     document.body.style.backgroundImage = `url(${randomBackground})`;
 }
 
-// 初始加载时设置背景
-setRandomBackground();
-
-// 监听窗口大小变化，当用户调整窗口时重新设置背景
-window.addEventListener('resize', setRandomBackground);
+// 初始加载时设置背景，只运行一次
+window.addEventListener('load', setRandomBackground);
